@@ -13,7 +13,7 @@ m = folium.Map(location=[20,10], zoom_start =2)
 st.title('IntRem mondiale')
 st.subheader('Ch. Bill')
 
-data = pd.read_excel('Panda7.xlsx')
+data = pd.read_csv('Panda10.csv')
 
 fig = px.choropleth(data, locations='iso_a3',
             color='IntRem', hover_name='Pays',
