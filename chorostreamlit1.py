@@ -11,7 +11,7 @@ geojson_url = 'https://raw.githubusercontent.com/python-visualization/folium/mas
 m = folium.Map(location=[20,10], zoom_start =2)
 
 st.title('IntRem mondiale')
-st.subheader('Ch. Bill')
+st.subheader('Ch. Billaude')
 
 data = pd.read_excel('Panda7.xlsx')
 
@@ -19,6 +19,6 @@ fig = px.choropleth(data, locations='iso_a3',
             color='IntRem', hover_name='Pays',
             animation_frame = 'Annee',
             color_continuous_scale= px.colors.sequential.Plasma,
-            projection='natural earth')
+            projection='orthographic')
 
 st.plotly_chart(fig)
