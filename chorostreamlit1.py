@@ -10,7 +10,7 @@ geojson_url = 'https://raw.githubusercontent.com/python-visualization/folium/mas
 
 m = folium.Map(location=[20,10], zoom_start =2)
 
-st.title('IntRem mondiale')
+st.title('Intal Rem mondiale')
 st.subheader('Ch. Billaude')
 
 data = pd.read_excel('Panda7.xlsx')
